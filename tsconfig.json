@@ -1,0 +1,14 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES6"],
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "app/*": ["./app/*"],
+      "assets/*": ["./app/assets/*"],
+      "utils/*": ["./app/utils/*"]
+    }
+  },
+  "exclude": ["node_modules", "patches", "babel.config.js", "metro.config.js"]
+}
